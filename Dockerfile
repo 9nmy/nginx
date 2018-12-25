@@ -35,7 +35,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
         && make install && make clean \
         && { \
                 echo -e ""; \
-                echo -e "daemon off"; \
+                echo -e "daemon off;"; \
                 echo -e "user $EXEC_USER;"; \
                 echo -e "worker_processes  1;\n\n"; \
                 echo -e "error_log  $NGINX_DIR/logs/error.log warn;"; \
