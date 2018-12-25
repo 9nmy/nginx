@@ -1,8 +1,8 @@
-FROM alpine:3.7
+FROM alpine:3.8
 
 ENV TZ CST-8
 ENV EXEC_USER www-data
-ENV NGINX_VERSION 1.14.0
+ENV NGINX_VERSION 1.15.7
 ENV NGINX_DIR /usr/local/nginx
 
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
